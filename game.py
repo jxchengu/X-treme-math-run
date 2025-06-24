@@ -51,11 +51,11 @@ if player1 and player2 and (num_players < 3 or player3) and (num_players < 4 or 
         col1, col2 = st.columns(2)
 
         with col1:
-            number1 = st.number_input(f"Score for {player1}", key="num1")
+            number1 = st.number_input(f"Score for {player1}", key="num1, ", format="%.2f")
             st.write("Box 1 current number:", number1)
 
         with col2:
-            number2 = st.number_input(f"Score for {player2}", key="num2")
+            number2 = st.number_input(f"Score for {player2}", key="num2", format="%.2f")
             st.write("Box 2 current number:", number2)
 
 
@@ -63,11 +63,11 @@ if player1 and player2 and (num_players < 3 or player3) and (num_players < 4 or 
         col1, col2 = st.columns(2)
 
         with col1:
-                number3 = st.number_input(f"score for {player3}", key="num3")
+                number3 = st.number_input(f"score for {player3}", key="num3", format="%.2f")
                 st.write("Box 1 current number:", number3)
     if num_players == 4:
         with col2:
-            number4 = st.number_input(f"score for {player4}", key="num4")
+            number4 = st.number_input(f"score for {player4}", key="num4", format="%.2f")
             st.write("Box 2 current number:", number4)
 else:
     st.warning("Please enter all players names to continue!")
